@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+.slideShow{
+    position: relative;
+    width: 650px;
+    height: 430px;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+.slideShow ul{
+    position: relative;
+    width: 3000px;    /*根据图片的宽度调节，大于或等于所有图片宽度的和*/
+}
+
+.slideShow ul li{
+    float: left;
+    width: 650px;
+}
+
+.slideShow .nav{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.slideShow .nav span{
+    float: left;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-left: 5px;
+    background-color: rgba(0,0,0,7);
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    -webkit-user-select: none;
+    opacity: 0.5;
+}
+
+.slideShow .nav span.active{
+    opacity: 1;
+}
